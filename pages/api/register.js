@@ -13,7 +13,7 @@ export default async function handler(req, res) {
     },
     body: JSON.stringify({ name, loginId, email, password }),
   });
-
+console.log("CHAT_DASH_API_KEY:", process.env.CHAT_DASH_API_KEY);
   const data = await response.json();
 
   if (response.ok) {
