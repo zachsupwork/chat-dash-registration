@@ -9,7 +9,7 @@ export default async function handler(req, res) {
   if (!name || !loginId || !email || !password) {
     return res.status(400).json({ message: "Missing required fields" });
   }
-
+console.log("Sending request to Chat-Dash with body:", { name, loginId, email, password });
   try {
     const response = await fetch("https://api.chat-dash.com/v1/public/clients", {
       method: "POST",
