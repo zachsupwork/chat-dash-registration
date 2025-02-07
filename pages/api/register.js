@@ -15,7 +15,7 @@ console.log("Sending request to Chat-Dash with body:", { name, loginId, email, p
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        Authorization: `Bearer CD.630826124fc9cc9f7ff43c18be95942d`,
+        Authorization: `CD.630826124fc9cc9f7ff43c18be95942d`,
       },
       body: JSON.stringify({ name, loginId, email, password }),
     });
